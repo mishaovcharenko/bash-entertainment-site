@@ -44,7 +44,7 @@ export default function Hero() {
         className="mt-10 flex items-center gap-5"
       >
         <a
-          href="mailto:hello@bashcollective.com"
+          href="mailto:alberto@bashentertainment.co"
           className="inline-block border border-text/20 px-7 py-2.5 text-[10px] uppercase tracking-[0.3em] text-text/70 transition-all duration-500 hover:border-red hover:text-red hover:shadow-[0_0_20px_var(--color-red-glow)]"
         >
           Email
