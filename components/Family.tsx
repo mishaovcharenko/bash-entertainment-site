@@ -19,23 +19,33 @@ export default function Family({ artists }: FamilyProps) {
       </Reveal>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-        {artists.map((artist, i) => (
-          <Reveal key={artist.name} delay={i * 0.08}>
-            <a
-              href={artist.spotify}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block text-center"
+        {artists.map((artist, i) => {
+          const isLast = i === artists.length - 1;
+          const isOddOut = isLast && artists.length % 2 !== 0;
+
+          return (
+            <div
+              key={artist.name}
+              className={isOddOut ? "md:col-span-2" : ""}
             >
-              <span className="inline-block text-[clamp(11px,1.1vw,14px)] uppercase tracking-[0.22em] text-text/70 transition-all duration-500 group-hover:text-red group-hover:[text-shadow:0_0_20px_var(--color-red-glow)]">
-                <span className="relative">
-                  {artist.name}
-                  <span className="absolute -bottom-1 left-0 h-px w-0 bg-red transition-all duration-500 group-hover:w-full" />
-                </span>
-              </span>
-            </a>
-          </Reveal>
-        ))}
+              <Reveal delay={i * 0.08}>
+                <a
+                  href={artist.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block text-center"
+                >
+                  <span className="inline-block text-[clamp(11px,1.1vw,14px)] uppercase tracking-[0.22em] text-text/70 transition-all duration-500 group-hover:text-red group-hover:[text-shadow:0_0_20px_var(--color-red-glow)]">
+                    <span className="relative">
+                      {artist.name}
+                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-red transition-all duration-500 group-hover:w-full" />
+                    </span>
+                  </span>
+                </a>
+              </Reveal>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

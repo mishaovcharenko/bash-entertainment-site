@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="px-6 py-10 text-center">
@@ -5,9 +7,19 @@ export default function Footer() {
         &copy; {new Date().getFullYear()} BASH. All rights reserved.
       </p>
       <div className="mt-3 flex items-center justify-center gap-4 text-[9px] uppercase tracking-[0.3em] text-muted/40">
-        <span>Privacy Policy</span>
+        <Link
+          href="/privacy"
+          className="transition-colors duration-300 hover:text-muted"
+        >
+          Privacy Policy
+        </Link>
         <span>|</span>
-        <span>Terms of Use</span>
+        <Link
+          href="/terms"
+          className="transition-colors duration-300 hover:text-muted"
+        >
+          Terms of Use
+        </Link>
       </div>
     </footer>
   );
