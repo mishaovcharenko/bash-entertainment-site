@@ -50,7 +50,7 @@ export default function Hero() {
           Email
         </a>
         <a
-          href="https://instagram.com/bashcollective"
+          href="https://www.instagram.com/presentedbybash/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block border border-text/20 px-7 py-2.5 text-[10px] uppercase tracking-[0.3em] text-text/70 transition-all duration-500 hover:border-red hover:text-red hover:shadow-[0_0_20px_var(--color-red-glow)]"
