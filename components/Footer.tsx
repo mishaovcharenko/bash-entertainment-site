@@ -43,21 +43,23 @@ export default function Footer() {
       <p className="text-[10px] uppercase tracking-[0.35em] text-muted/60">
         &copy; {new Date().getFullYear()} BASH. All rights reserved.
       </p>
-      <div className="mt-3 flex items-center justify-center gap-4 text-[9px] uppercase tracking-[0.3em] text-muted/40">
-        <Link
-          href="/privacy"
-          className="transition-colors duration-300 hover:text-muted"
-        >
-          Privacy Policy
-        </Link>
-        <span>|</span>
-        <Link
-          href="/terms"
-          className="transition-colors duration-300 hover:text-muted"
-        >
-          Terms of Use
-        </Link>
-        <span>|</span>
+      <div className="mt-3 flex flex-col items-center gap-2 text-[9px] uppercase tracking-[0.3em] text-muted/40 sm:flex-row sm:justify-center sm:gap-4">
+        <div className="flex items-center gap-4">
+          <Link
+            href="/privacy"
+            className="transition-colors duration-300 hover:text-muted"
+          >
+            Privacy Policy
+          </Link>
+          <span className="hidden sm:inline">|</span>
+          <Link
+            href="/terms"
+            className="transition-colors duration-300 hover:text-muted"
+          >
+            Terms of Use
+          </Link>
+        </div>
+        <span className="hidden sm:inline">|</span>
         <Link
           href="/privacy#do-not-sell"
           className="transition-colors duration-300 hover:text-muted"
