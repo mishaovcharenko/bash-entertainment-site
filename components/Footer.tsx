@@ -57,6 +57,13 @@ export default function Footer() {
         >
           Terms of Use
         </Link>
+        <span>|</span>
+        <Link
+          href="/privacy#do-not-sell"
+          className="transition-colors duration-300 hover:text-muted"
+        >
+          Do Not Sell My Personal Information
+        </Link>
       </div>
     </footer>
   );
