@@ -3,7 +3,6 @@ import Reveal from "./Reveal";
 interface OnesWeBuildWithMember {
   name: string;
   instagram: string;
-  spotify?: string;
 }
 
 interface OnesWeBuildWithProps {
@@ -44,16 +43,6 @@ export default function OnesWeBuildWith({ members }: OnesWeBuildWithProps) {
                       </span>
                     </span>
                   </a>
-                  {member.spotify && (
-                    <a
-                      href={member.spotify}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[10px] uppercase tracking-widest text-muted hover:text-red transition-colors"
-                    >
-                      Spotify
-                    </a>
-                  )}
                 </div>
               </Reveal>
             </div>
