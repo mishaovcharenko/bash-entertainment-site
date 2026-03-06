@@ -10,10 +10,10 @@ export default function Hero() {
   const dur = prefersReducedMotion ? 0 : 0.9;
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center px-4 pb-16 pt-6 sm:pt-8 md:pb-20">
+    <section id="hero" className="relative flex min-h-screen flex-col items-center justify-center px-4 pb-16 pt-6 sm:pt-8 md:pb-20">
       <div className="flex flex-1 flex-col items-center justify-center">
         <motion.div
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: dur, ease: EASE }}
           className="relative"
@@ -30,7 +30,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: dur, ease: EASE, delay: 0.2 }}
           className="mt-6 font-[family-name:var(--font-cormorant)] text-[clamp(12px,1.6vw,16px)] uppercase tracking-[0.3em] text-text/80 md:mt-8 text-center max-w-md"
@@ -39,7 +39,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.span
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: dur, delay: 0.6 }}
           className="mt-10 text-[10px] uppercase tracking-[0.4em] text-muted scroll-pulse md:mt-12"

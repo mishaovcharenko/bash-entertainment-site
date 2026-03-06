@@ -11,7 +11,7 @@ interface OnesWeBuildWithProps {
 
 export default function OnesWeBuildWith({ members }: OnesWeBuildWithProps) {
   return (
-    <section className="mx-auto max-w-[640px] px-6 py-16 md:py-20">
+    <section id="ones-we-build-with" className="mx-auto max-w-[640px] px-6 py-16 md:py-20">
       <Reveal>
         <h2 className="mb-10 text-center text-[clamp(12px,1.4vw,15px)] uppercase tracking-[0.35em] text-muted">
           The Ones We Build With
