@@ -108,10 +108,10 @@ export default function TermsOfUse() {
           <p>
             For questions about these terms, contact us at{" "}
             <a
-              href="mailto:alberto@bashentertainment.co"
+              href="mailto:Admin@bashentertainment.co"
               className="text-text/70 transition-colors duration-300 hover:text-red"
             >
-              alberto@bashentertainment.co
+              Admin@bashentertainment.co
             </a>
           </p>
         </section>

@@ -62,7 +62,7 @@ Along the way, the company itself began expanding — not out of ambition alone,
 
 What started as a talent management company slowly evolved into something larger.
 
-Today, BASH is a fully integrated creative ecosystem that challenges the status quo across film, music, digital, brand strategy, ventures, and culture.
+Today, BASH is a platform for building talent, brands, stories, and culture.
 
 As our world expanded, so did the range of voices we chose to champion — from filmmakers and musicians to digital creators, cultural voices, and emerging storytellers across disciplines.
 

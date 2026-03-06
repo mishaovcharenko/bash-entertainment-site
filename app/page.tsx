@@ -14,7 +14,9 @@ export default async function Home() {
 
   const oneswebuildwithPath = path.join(process.cwd(), "content", "oneswebuildwith.json");
   const oneswebuildwithRaw = await fs.readFile(oneswebuildwithPath, "utf-8");
-  const oneswebuildwith = JSON.parse(oneswebuildwithRaw);
+  const oneswebuildwith = JSON.parse(oneswebuildwithRaw).sort((a: { name: string }, b: { name: string }) =>
+    a.name.localeCompare(b.name)
+  );
 
   return (
     <main>

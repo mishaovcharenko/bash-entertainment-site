@@ -122,10 +122,10 @@ export default function PrivacyPolicy() {
           <p className="mt-4">
             To exercise any of these rights, please contact us at{" "}
             <a
-              href="mailto:alberto@bashentertainment.co"
+              href="mailto:Admin@bashentertainment.co"
               className="text-text/70 transition-colors duration-300 hover:text-red"
             >
-              alberto@bashentertainment.co
+              Admin@bashentertainment.co
             </a>
             {" "}with the subject line &quot;California Privacy Request.&quot;
             We will respond to verified requests within 45 days as required by
@@ -142,10 +142,10 @@ export default function PrivacyPolicy() {
             as defined under the CCPA/CPRA. If you would still like to submit a
             formal request, please email{" "}
             <a
-              href="mailto:alberto@bashentertainment.co?subject=Do%20Not%20Sell%20My%20Personal%20Information"
+              href="mailto:Admin@bashentertainment.co?subject=Do%20Not%20Sell%20My%20Personal%20Information"
               className="text-text/70 transition-colors duration-300 hover:text-red"
             >
-              alberto@bashentertainment.co
+              Admin@bashentertainment.co
             </a>
             {" "}with the subject line &quot;Do Not Sell My Personal
             Information.&quot;
@@ -165,10 +165,10 @@ export default function PrivacyPolicy() {
           <p>
             If you have questions about this policy, contact us at{" "}
             <a
-              href="mailto:alberto@bashentertainment.co"
+              href="mailto:Admin@bashentertainment.co"
               className="text-text/70 transition-colors duration-300 hover:text-red"
             >
-              alberto@bashentertainment.co
+              Admin@bashentertainment.co
             </a>
           </p>
         </section>

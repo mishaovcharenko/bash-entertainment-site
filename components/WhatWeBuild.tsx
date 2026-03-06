@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 import SectionDivider from "./SectionDivider";
 
 const intro =
-  "What began as talent management has evolved into a fully integrated creative ecosystem designed to build people, stories, and cultural moments.";
+  "What began as talent management has evolved into a platform for building talent, brands, stories, and culture.";
 
 const sections = [
   {
