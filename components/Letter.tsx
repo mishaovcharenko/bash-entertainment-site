@@ -11,7 +11,7 @@ export default function Letter({ content }: LetterProps) {
     .filter(Boolean);
 
   return (
-    <section className="relative mx-auto max-w-[640px] px-6 pt-20 md:pt-28">
+    <section className="relative mx-auto max-w-[640px] px-6 py-16 md:py-20">
       {paragraphs.map((text, i) => (
         <Reveal key={i}>
           <p className="letter-text mb-[28px] md:mb-[40px] whitespace-pre-line">
@@ -19,7 +19,6 @@ export default function Letter({ content }: LetterProps) {
           </p>
         </Reveal>
       ))}
-      <div className="mx-auto my-10 h-px w-16 bg-muted/30" />
     </section>
   );
 }

@@ -26,7 +26,7 @@ const externalLinks = [
 export default function Footer() {
   return (
     <footer className="px-6 py-10 text-center">
-      <div className="mx-auto mb-8 flex max-w-[480px] flex-wrap items-center justify-center gap-x-6 gap-y-3">
+      <div className="mx-auto mb-6 flex max-w-[480px] flex-wrap items-center justify-center gap-x-6 gap-y-3">
         {externalLinks.map((link) => (
           <a
             key={link.href}
@@ -40,7 +40,7 @@ export default function Footer() {
         ))}
       </div>
 
-      <p className="text-[10px] uppercase tracking-[0.35em] text-muted/60">
+      <p className="mt-10 text-[10px] uppercase tracking-[0.35em] text-muted/60">
         &copy; {new Date().getFullYear()} BASH. All rights reserved.
       </p>
       <div className="mt-3 flex flex-col items-center gap-2 text-[9px] uppercase tracking-[0.3em] text-muted/40 sm:flex-row sm:justify-center sm:gap-4">
@@ -67,6 +67,17 @@ export default function Footer() {
           Do Not Sell My Personal Information
         </Link>
       </div>
+      <p className="mt-8 text-[9px] uppercase tracking-[0.2em] text-muted/30">
+        Built by misha from{" "}
+        <a
+          href="https://seatlock.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors duration-300 hover:text-muted"
+        >
+          seatlock
+        </a>
+      </p>
     </footer>
   );
 }

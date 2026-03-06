@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 const inter = Inter({
@@ -54,6 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
+        <div className="flagpole" aria-hidden="true" />
+        <Nav />
         {children}
         <div className="grain-overlay" aria-hidden="true" />
         <div className="vignette-overlay" aria-hidden="true" />

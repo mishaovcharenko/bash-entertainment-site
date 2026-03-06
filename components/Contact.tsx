@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import { social } from "@/config/social";
 
 export default function Contact() {
   return (
@@ -17,22 +18,12 @@ export default function Contact() {
       </Reveal>
 
       <Reveal delay={0.2}>
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="mailto:hello@bashcollective.com"
-            className="inline-block border border-text/20 px-8 py-3 text-[11px] uppercase tracking-[0.3em] text-text/70 transition-all duration-500 hover:border-red hover:text-red hover:shadow-[0_0_20px_var(--color-red-glow)]"
-          >
-            Email
-          </a>
-          <a
-            href="https://instagram.com/bashcollective"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border border-text/20 px-8 py-3 text-[11px] uppercase tracking-[0.3em] text-text/70 transition-all duration-500 hover:border-red hover:text-red hover:shadow-[0_0_20px_var(--color-red-glow)]"
-          >
-            Instagram
-          </a>
-        </div>
+        <a
+          href={social.email}
+          className="inline-block border border-text/20 px-8 py-3 text-[11px] uppercase tracking-[0.3em] text-text/70 transition-all duration-500 hover:border-red hover:text-red hover:shadow-[0_0_20px_var(--color-red-glow)]"
+        >
+          Connect
+        </a>
       </Reveal>
     </section>
   );

@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Editing Content
 
-### Open Letter
+### A Letter From The Story So Far
 
 Edit `content/open-letter.md`. Each paragraph separated by a blank line becomes a separate scroll-reveal block on the site.
 
