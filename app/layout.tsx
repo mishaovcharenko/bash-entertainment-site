@@ -18,7 +18,7 @@ const cormorant = Cormorant_Garamond({
 
 const siteUrl = "https://bash-entertainment.netlify.app";
 const description =
-  "BASH — a fully integrated creative ecosystem across film, music, digital, brand strategy, ventures, and culture.";
+  "BASH | Building Talent, Brands, Stories, and Culture.";
 
 export const metadata: Metadata = {
   title: "BASH",
