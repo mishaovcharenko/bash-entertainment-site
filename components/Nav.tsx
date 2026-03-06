@@ -5,6 +5,7 @@ import {
   EmailIcon,
   FacebookIcon,
   InstagramIcon,
+  SubstackIcon,
   TikTokIcon,
   YouTubeIcon,
 } from "@/components/icons";
@@ -16,6 +17,7 @@ const navItems = [
   { key: "facebook" as const, href: social.facebook, Icon: FacebookIcon },
   { key: "tiktok" as const, href: social.tiktok, Icon: TikTokIcon },
   { key: "youtube" as const, href: social.youtube, Icon: YouTubeIcon },
+  { key: "substack" as const, href: social.substack, Icon: SubstackIcon },
   { key: "email" as const, href: social.email, Icon: EmailIcon },
 ] as const;
 
@@ -35,7 +37,15 @@ export default function Nav() {
               ? {}
               : { target: "_blank", rel: "noopener noreferrer" })}
             className="text-muted/70 transition-colors duration-300 hover:text-red focus:outline-none focus-visible:text-red"
-            aria-label={key === "email" ? "Email" : key === "facebook" ? "Facebook" : key}
+            aria-label={
+              key === "email"
+                ? "Email"
+                : key === "facebook"
+                  ? "Facebook"
+                  : key === "substack"
+                    ? "Newsletter"
+                    : key
+            }
           >
             <Icon size={iconSize} />
           </a>

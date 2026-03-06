@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { social } from "@/config/social";
 
 const externalLinks = [
+  { label: "Newsletter", href: social.substack },
   {
     label: "How We Made Our First Independent Feature",
     href: "https://youtu.be/1yiXv2DHn88?si=d16Pn_lcZVrxlJm7",
