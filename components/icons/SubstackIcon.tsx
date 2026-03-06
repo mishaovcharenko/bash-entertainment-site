@@ -21,7 +21,12 @@ export default function SubstackIcon({
       className={className}
       aria-hidden
     >
-      <path d="M5 7h14M5 12h14M5 17h10" />
+      <path d="M6 5h12M6 8h12" />
+      <path
+        d="M6 13h12v9l-6-3.5L6 22v-9z"
+        fill="currentColor"
+        stroke="none"
+      />
     </svg>
   );
 }
