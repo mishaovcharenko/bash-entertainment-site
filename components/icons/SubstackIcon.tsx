@@ -16,14 +16,14 @@ export default function SubstackIcon({
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      strokeLinecap="butt"
+      strokeLinejoin="miter"
       className={className}
       aria-hidden
     >
-      <path d="M6 4h12M6 7h12" />
+      <path d="M4 4h16M4 7h16" />
       <path
-        d="M6 9h12v12l-6-4L6 21V9z"
+        d="M4 9h16v12l-8-4L4 21V9z"
         fill="currentColor"
         stroke="none"
       />
