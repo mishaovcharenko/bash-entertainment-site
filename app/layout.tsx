@@ -18,14 +18,14 @@ const cormorant = Cormorant_Garamond({
 
 const siteUrl = "https://bash-entertainment.netlify.app";
 const description =
-  "BASH | Building Talent, Brands, Stories, and Culture.";
+  "BASH | Building Artists, Talent, Brands, Stories, and Culture.";
 
 export const metadata: Metadata = {
-  title: "BASH",
+  title: "BASH | Building Artists, Talent, Brands, Stories, and Culture.",
   description,
   metadataBase: new URL(siteUrl),
   openGraph: {
-    title: "BASH",
+    title: "BASH | Building Artists, Talent, Brands, Stories, and Culture.",
     description,
     url: siteUrl,
     siteName: "BASH",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BASH",
+    title: "BASH | Building Artists, Talent, Brands, Stories, and Culture.",
     description,
     images: ["/og-image.png"],
   },
