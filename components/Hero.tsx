@@ -33,9 +33,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: dur, ease: EASE, delay: 0.2 }}
-          className="mt-6 font-[family-name:var(--font-cormorant)] text-[clamp(12px,1.6vw,16px)] uppercase tracking-[0.3em] text-text/80 md:mt-8"
+          className="mt-6 font-[family-name:var(--font-cormorant)] text-[clamp(12px,1.6vw,16px)] uppercase tracking-[0.3em] text-text/80 md:mt-8 text-center max-w-md"
         >
-          A letter from the story so far.
+          Building Artists, Talent, Brands, Stories, and Culture.
         </motion.p>
 
         <motion.span
