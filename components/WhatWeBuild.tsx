@@ -37,7 +37,7 @@ const sections = [
 
 export default function WhatWeBuild() {
   return (
-    <section className="mx-auto max-w-[640px] px-6 py-16 md:py-20">
+    <section className="mx-auto max-w-[640px] px-6 pt-10 pb-16 md:pt-12 md:pb-20">
       <Reveal>
         <h2 className="mb-10 text-center text-[clamp(12px,1.4vw,15px)] uppercase tracking-[0.35em] text-muted">
           What We Build
@@ -62,7 +62,7 @@ export default function WhatWeBuild() {
               {body}
             </p>
           </div>
-          <SectionDivider />
+          {i < sections.length - 1 && <SectionDivider />}
         </Reveal>
       ))}
     </section>

@@ -25,7 +25,7 @@ export default async function Home() {
       <OnesWeBuildWith members={oneswebuildwith} />
       <SectionDivider />
       <WhatWeBuild />
-      <div className="flex flex-col items-center gap-10 px-6 py-10 md:gap-12 md:py-12">
+      <div className="flex flex-col items-center gap-6 px-6 py-6 md:py-8">
         <div className="flex w-full justify-center" aria-hidden>
           <div className="h-px w-16 bg-muted/30" />
         </div>
