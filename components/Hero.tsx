@@ -25,7 +25,7 @@ export default function Hero() {
             width={480}
             height={160}
             priority
-            className="relative w-[280px] md:w-[420px] lg:w-[480px] h-auto mix-blend-lighten"
+            className="relative w-[280px] md:w-[420px] lg:w-[480px] h-auto supports-[mix-blend-mode:lighten]:mix-blend-lighten"
           />
         </motion.div>
 
